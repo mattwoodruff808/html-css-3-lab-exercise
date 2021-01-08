@@ -1,6 +1,7 @@
 import {Component} from 'react';
 import Header from './Components/Header';
 import Main from './Components/Main';
+import Animation from './Components/Animation';
 import './App.css';
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
           menuView={menuView}
           toggleMenuFn={this.toggleMenuView}/>
         <Main />
+        <Animation />
       </section>
     )
   }

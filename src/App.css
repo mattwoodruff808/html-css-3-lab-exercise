@@ -91,6 +91,23 @@ button:hover {
   transform: scale(1.1)
 }
 
+.animation-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.animation {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  animation-name: slide;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 @media(max-width: 843px){
   nav {
     display: none;
@@ -143,5 +160,17 @@ button:hover {
   button {
     height: 60px;
     width: 192px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0, 0)
+  }
+  50% {
+    transform: translate(0, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
